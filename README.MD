@@ -66,6 +66,14 @@ This guide provides step-by-step instructions for fine-tuning using the alignmen
     pip install flash-attn --no-build-isolation
     ```
 
+### Colab
+
+```
+wget https://github.com/Dao-AILab/flash-attention/releases/download/v2.5.6/flash_attn-2.5.6+cu122torch2.1cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
+
+pip install flash_attn-2.5.6+cu122torch2.1cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
+```
+
 ## Data Preparation
 
 1. **Download datasets and images:**
