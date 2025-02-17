@@ -4,12 +4,12 @@
 # Beta: 0.1
 # Use Average: False
 # Learning Rate: 5e-5
-DATA_PATH=/content/mllm-dpo/playground/data/dpo/chains.json
+DATA_PATH=/content/mllm-dpo/playground/data/chains.json
 IMAGE_FOLDER=/content/mllm-dpo/playground/data 
 run_name=mllm-dpo-2k
 ouput_dir=/content/checkpoints/${run_name}
 # Notice that I am loading the latest model checkopint 
-model_name=/content/checkpoints/llava-v1.5-7b # Use the previous model checkpoint
+model_name=liuhaotian/llava-v1.5-7b # Use the previous model checkpoint
 deepspeed llava/train/train_mem.py \
     --lora_enable True --lora_r 128 --lora_alpha 256 --mm_projector_lr 2e-5 \
     --deepspeed ./scripts/zero3.json \
